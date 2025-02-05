@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Socialy</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="../index.css" /> -->
+    <script src="../index.js" defer></script>
+    <link
+    rel="icon"
+    type="image/x-icon"
+    href="../images/nicubunu_RPG_map_symbols_Pyramid.svg"
+  />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+  <style>
+    nav {
+
+position: fixed;
+left: 0;
+top: 0;
+right: 0;
+z-index: 50;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 36px;
+background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent background */
+backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+
+}
+
+nav > div {
+display: flex;
+align-items: center;
+gap: 24px;
+}
+
+nav > div:first-child {
+gap: 10px;
+}
+
+nav .site_title {
+font-size: 1.5rem;
+font-weight: 600;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+nav .material-icons {
+color: #fff;
+font-size: 24px;
+cursor: pointer;
+transition: color 0.3s ease;
+text-decoration: none;
+}
+
+nav .material-icons:hover {
+color: #ecad29; /* Highlight color on hover */
+}
+
+nav > div:last-child > a {
+font-size: 14px;
+font-weight: 500;
+color: #fff;
+text-transform: uppercase;
+cursor: pointer;
+position: relative;
+transition: color 0.3s ease;
+}
+
+nav > div:last-child > a:not(.svg-container):hover {
+color: #ecad29; /* Highlight color on hover */
+}
+
+/* Active Link Style */
+nav > a:last-child > .active {
+color: #ecad29;
+}
+nav > a:last-child > .active::after {
+content: '';
+position: absolute;
+bottom: -8px;
+left: 0;
+right: 0;
+height: 3px;
+background-color: #ecad29;
+border-radius: 99px;
+animation: underline 0.3s ease;
+}
+@keyframes underline {
+from {
+    transform: scaleX(0);
+}
+to {
+    transform: scaleX(1);
+}
+}
+
+/* Hover Effect for Non-Active Links */
+nav > div:last-child > div:not(.active):hover::after {
+content: '';
+position: absolute;
+bottom: -8px;
+left: 0;
+right: 0;
+height: 3px;
+background-color: #ecad29;
+border-radius: 99px;
+transform: scaleX(0);
+transform-origin: bottom right;
+transition: transform 0.3s ease;
+}
+
+nav > div:last-child > div:not(.active):hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+/* Search and Person Icons */
+nav .svg-container {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 36px;
+height: 36px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+transition: background-color 0.3s ease;
+}
+/* discover */
+
+nav .svg-container:hover {
+background-color: rgba(236, 173, 41, 0.2); /* Highlight background on hover */
+}
+  </style>
+</head>
+<body>
+    <nav style="height: 40px;">
+        <div>
+            <div class="svg-container">
+             <a href="../index.html"><img src="../images/nicubunu_RPG_map_symbols_Pyramid.svg" alt="" width="50" height="50"></a>
+            </div>
+            <a href="../index.html" style="text-decoration: none;"><div style="margin: 4px;" class="site_title">Nile Treasures</div></a>
+        </div>
+        <div>
+          <a class="nav" class="material-icons" href="../index.html">Home</a>
+          <a class="nav" class="material-icons" href="../explore/explore.html">Explore</a>
+          <a class="nav" class="material-icons" href="../pages/attractions.html">Eternal Egypt</a>
+          <a class="nav" class="material-icons" href="aboutUsPage.html">About Us</a>
+          <a class="nav" class="material-icons" href="../contact.html">Contact</a>
+          <!-- <div class="svg-container">
+          <input type="search" class="material-icons">search</span>
+        </div> -->
+          <div class="svg-container">
+            <a href="../signup.html" class="material-icons">person</a>
+          </div>
+        </div>
+      </nav>
+  
+    <div class="container">
+        <header class="header">
+            
+            <h1>About us</h1>
+            <p>Discover the land of Pharaohs, ancient pyramids, stunning deserts, and the beautiful Nile River. Egypt is a country with a rich history that dates back thousands of years, offering visitors a chance to explore its ancient wonders, vibrant culture, and breathtaking landscapes.Egypt has something for everyone.</p> 
+
+        <div class="about-images">
+            <img src="pyramids.jfif" id="firstImg" >
+            <img src="dahab.jpg" id="secondImg" >
+            <img src="R.jfif" id="thirdImg" >
+        </div>
+        </header>
+        
+    </div>
+    <div class="container2">
+        <section class="about-section">
+            <h2>Egypt is Rich!</h2>
+            <div class="about-content">
+                <div id="right-content">
+                    <p>Explore Egypt's ancient civilization, visit its world-renowned landmarks, and immerse yourself in its rich culture. From the towering pyramids to the intricate hieroglyphs carved on temple walls, Egypt offers an unparalleled journey through history and mythology.</p>
+                </div>
+                <div id="left-content">
+                    <p>From the breathtaking pyramids to the serene Red Sea shores, Egypt offers an unforgettable experience. Whether you're diving in the crystal-clear waters, enjoying a relaxing cruise along the Nile, or wandering through the bustling souks, there is no shortage of adventure and discovery in this magical land.</p>
+                </div> 
+            </div>
+               
+        </section>
+    </div>
+    <div class="container2">
+        <section class="about-section">
+            <div class="about-content">
+                <div id="right-content2" style="text-align: center; margin-top: 20px;">
+                    <video id="custom-video" controls autoplay loop playsinline 
+                           style="width: 100%; max-width: 500px; border-radius: 10px; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);">
+                        <source src="vid1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <button id="pip-btn" style="margin-top: 10px; padding: 10px 15px; font-size: 16px; cursor: pointer;">
+                        Enable PiP Mode
+                    </button>
+                </div>
+                
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        let video = document.getElementById("custom-video");
+                        let pipButton = document.getElementById("pip-btn");
+                        video.volume = 0.1; 
+                        setTimeout(() => {
+                            if (document.pictureInPictureEnabled && !video.disablePictureInPicture) {
+                                video.requestPictureInPicture().catch(console.error);
+                            }
+                        }, 11000);
+                        pipButton.addEventListener("click", async () => {
+                            if (document.pictureInPictureElement) {
+                                document.exitPictureInPicture();
+                            } else {
+                                try {
+                                    await video.requestPictureInPicture();
+                                } catch (error) {
+                                    console.error("Error enabling PiP mode:", error);
+                                }
+                            }
+                        });
+            
+                        video.addEventListener("ended", () => {
+                            if (document.pictureInPictureElement) {
+                                document.exitPictureInPicture();
+                            }
+                        });
+                    });
+                </script>            
+                <div id="left-content2">
+                    <h2>Experience Egypt</h2>
+                    <p>Take a virtual tour of Egypt and see its breathtaking landscapes and historical sites. Witness the grandeur of ancient temples, experience the hospitality of the Egyptian people, and enjoy the diverse cuisine that blends flavors from the Middle East and the Mediterranean. Whether you are seeking adventure, relaxation, or historical exploration, Egypt is a destination that will captivate and inspire.</p>
+                    <div id="paragraphwithborder">
+                        <p>“Egypt is the gift of the Nile” - Herodotus. This remarkable land has stood the test of time, preserving its historical treasures while embracing modernity. Come and explore the wonders of this timeless country.</p>
+                    </div>
+                </div>
+                
+            </div>
+               
+        </section>
+    </div>
+    <section class="features-section">
+        <div class="container">
+            <h2>Why Visit Egypt?</h2>
+            <p>Egypt is a destination filled with history, breathtaking landscapes, and vibrant traditions. Whether you're fascinated by ancient wonders, enjoy exploring natural beauty, or love experiencing diverse cultures, Egypt has it all. The mix of historical sites, bustling modern cities, and picturesque coastal resorts makes Egypt a truly unique travel destination.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>Ancient History</h3>
+                    <p>Walk in the footsteps of Pharaohs and explore the wonders of the ancient world. Visit the iconic Pyramids of Giza, the magnificent temples of Luxor and Karnak, and the historic Valley of the Kings where ancient rulers were laid to rest.</p>
+                </div>
+                <div class="feature">
+                    <h3>Stunning Landscapes</h3>
+                    <p>From the vast Sahara Desert to the crystal-clear waters of the Red Sea, Egypt boasts a diverse range of natural landscapes. Experience a thrilling desert safari, go scuba diving in some of the world's most beautiful coral reefs, or take a felucca ride down the Nile.</p>
+                </div>
+                <div class="feature">
+                    <h3>Rich Culture</h3>
+                    <p>Experience Egyptian hospitality, music, and world-renowned cuisine. The Egyptian people are known for their warmth and generosity, and the country's vibrant culture is reflected in its art, music, and traditions. Try delicious traditional dishes like koshari, falafel, and baklava.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

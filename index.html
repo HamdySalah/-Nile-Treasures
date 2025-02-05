@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nile Treasures</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <style>
+      .transparent-btn {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .transparent-btn:hover {
+        color: #f0a500;
+        transform: scale(1.1);
+        transition: 0.3s ease-in-out;
+      }
+    </style>
+        <link
+        rel="icon"
+        type="image/x-icon"
+        href="images/nicubunu_RPG_map_symbols_Pyramid.svg"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="indicator"></div>
+    <nav>
+      <div>
+        <div class="svg-container">
+         <a href="index.html"><img src="images/nicubunu_RPG_map_symbols_Pyramid.svg" alt="" width="50" height="50"></a>
+        </div>
+        <a href="index.html" style="text-decoration: none;"><div style="margin: 4px;" class="site_title">Nile Treasures</div></a>
+    </div>
+      <div>
+        <a class="nav" class="material-icons" href="index.html">Home</a>
+        <a class="nav" class="material-icons" href="explore/explore.html">Explore</a>
+        <a class="nav" class="material-icons" href="pages/attractions.html">Eternal Egypt</a>
+        <a class="nav" class="material-icons" href="AboutUs/aboutUsPage.html">About Us</a>
+        <a class="nav" class="material-icons" href="contact.html">Contact</a>
+        <!-- <div class="svg-container">
+        <input type="search" class="material-icons">search</span>
+      </div> -->
+        <div class="svg-container">
+          <a href="signup.html" class="material-icons">person</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="demo"></div>
+    <div class="details" id="details-even">
+      <div class="place-box">
+        <div class="text">Giza - near Cairo</div>
+      </div>
+      <div class="title-box-1"><div class="title-1">The Pyramids</div></div>
+      <div class="title-box-2"><div class="title-2">of Giza</div></div>
+      <div class="desc">
+        The Great Pyramid of Khufu (Cheops), one of the Seven Wonders of the
+        Ancient World. The Sphinx, a massive limestone statue with the body of a
+        lion and the head of a pharaoh. Sound and Light Show at night, which
+        narrates the history of the pyramids.
+      </div>
+      <div class="cta">
+        <button class="bookmark">
+          <i class="material-icons">bookmark</i>
+        </button>
+        <button class="discover">
+          <a href="explore/explore.html" rel="noopener noreferrer">Discover Locations</a>
+        </button>
+      </div>
+    </div>
+    <div class="details" id="details-odd">
+      <div class="place-box">
+        <div class="text">Switzerland Alps</div>
+      </div>
+      <div class="title-box-1"><div class="title-1">SAINT</div></div>
+      <div class="title-box-2"><div class="title-2">ANTONIEN</div></div>
+      <div class="desc">
+
+      </div>
+      <div class="cta">
+        <button class="bookmark">
+          <i class="material-icons">bookmark</i>
+        </button>
+        <button class="discover">
+          <a href="explore/explore.html" rel="noopener noreferrer">Discover Locations</a>
+        </button>
+      </div>
+    </div>
+    <div class="pagination" id="pagination">
+      <div class="arrow arrow-left">
+        <button class="transparent-btn" onclick="moveLeft()">
+          <i class="material-icons">arrow_back_ios</i>
+        </button>
+      </div>
+      <div class="arrow arrow-right">
+        <button class="transparent-btn" onclick="moveRight()">
+          <i class="material-icons">arrow_forward_ios</i>
+        </button>
+      </div>
+      <div class="progress-sub-container">
+        <div class="progress-sub-background">
+          <div class="progress-sub-foreground"></div>
+        </div>
+      </div>
+      <div class="slide-numbers" id="slide-numbers"></div>
+    </div>
+
+    <div class="cover"></div>
+  </body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/nicubunu_RPG_map_symbols_Pyramid.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Contact Us</title>
+    <style>
+      .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        background-color: #d4af37;
+        color: #ffffff;
+        min-height: 100vh;
+      }
+
+      .contact-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        background: #f7f4e8;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        gap: 30px;
+      }
+
+      .contact-title {
+        flex: 1;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: #2c2c2c;
+      }
+      .contact-form-container {
+        flex: 2;
+        background-image: url("https://example.com/egypt-background.jpg");
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        padding: 30px;
+        color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+      .contact-form input,
+      .contact-form textarea {
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        padding: 12px;
+        width: 100%;
+        margin: 10px 0;
+        box-sizing: border-box;
+        background-color: #f4f0e1;
+      }
+      .contact-form button {
+        background-color: #f39c12;
+        color: white;
+        font-size: 1.1rem;
+        padding: 12px;
+        border-radius: 8px;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .contact-form button:hover {
+        background-color: #d35400;
+      }
+
+.footer {
+  background-color: #31302b; 
+  color: #cccccc;           
+  padding: 40px 50px;        
+  display: flex;             
+  justify-content: space-between; 
+  font-size: 14px;           
+  border-top: 3px solid #f39c12; 
+}
+
+.footer div {
+  flex: 1;                   
+  margin-right: 20px;      
+}
+
+.footer div:last-child {
+  text-align: right;         
+}
+
+.footer p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.footer a {
+  color: #cccccc;          
+  text-decoration: none;     
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f39c12;             
+  text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;  
+    align-items: center;     
+    text-align: center;  
+  }
+
+.footer div {
+margin-right: 0;         
+margin-bottom: 20px;      
+}
+}
+
+label {
+ font-weight: bold;
+ color: #3a3535;
+}
+
+nav {
+
+position: fixed;
+left: 0;
+top: 0;
+right: 0;
+z-index: 50;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 36px;
+background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent background */
+backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav > div {
+display: flex;
+align-items: center;
+gap: 24px;
+}
+
+nav > div:first-child {
+gap: 10px;
+}
+
+nav .site_title {
+font-size: 1.5rem;
+font-weight: 600;
+color: #fff;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+nav .material-icons {
+color: #fff;
+font-size: 24px;
+cursor: pointer;
+transition: color 0.3s ease;
+text-decoration: none;
+}
+
+nav .material-icons:hover {
+color: #ecad29; /* Highlight color on hover */
+}
+
+nav > div:last-child > a {
+font-size: 14px;
+font-weight: 500;
+color: #fff;
+text-transform: uppercase;
+cursor: pointer;
+position: relative;
+transition: color 0.3s ease;
+}
+
+nav > div:last-child > a:not(.svg-container):hover {
+color: #ecad29; /* Highlight color on hover */
+}
+
+/* Active Link Style */
+nav > a:last-child > .active {
+color: #ecad29;
+}
+nav > a:last-child > .active::after {
+content: '';
+position: absolute;
+bottom: -8px;
+left: 0;
+right: 0;
+height: 3px;
+background-color: #ecad29;
+border-radius: 99px;
+animation: underline 0.3s ease;
+}
+@keyframes underline {
+from {
+    transform: scaleX(0);
+}
+to {
+    transform: scaleX(1);
+}
+}
+
+/* Hover Effect for Non-Active Links */
+nav > div:last-child > div:not(.active):hover::after {
+content: '';
+position: absolute;
+bottom: -8px;
+left: 0;
+right: 0;
+height: 3px;
+background-color: #ecad29;
+border-radius: 99px;
+transform: scaleX(0);
+transform-origin: bottom right;
+transition: transform 0.3s ease;
+}
+
+nav > div:last-child > div:not(.active):hover::after {
+transform: scaleX(1);
+transform-origin: bottom left;
+}
+
+/* Search and Person Icons */
+nav .svg-container {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 36px;
+height: 36px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+transition: background-color 0.3s ease;
+}
+/* discover */
+
+nav .svg-container:hover {
+background-color: rgba(236, 173, 41, 0.2); /* Highlight background on hover */
+}
+</style>
+
+  </head>
+  <body>
+    <nav>
+      <div>
+        <div class="svg-container">
+          <img src="images/nicubunu_RPG_map_symbols_Pyramid.svg" alt="" width="50" height="50"/>
+        </div>
+        <div style="margin: 10px" class="site_title">Nile Treasures</div>
+      </div>
+      <div>
+        <a class="nav" class="material-icons" href="index.html">Home</a>
+        <a class="nav" class="material-icons" href="/explore/explore.html">Explore</a>
+        <a class="nav" class="material-icons" href="pages/attractions.html">Eternal Egypt</a>
+        <a class="nav" class="material-icons" href="AboutUs/aboutUsPage.html">About Us</a>
+        <a class="nav" class="material-icons" href="contact.html">Contact</a>
+        <!-- <div class="svg-container">
+        <input type="search" class="material-icons">search</span>
+      </div> -->
+        <div class="svg-container">
+          <a href="signup.html" class="material-icons">person</a>
+        </div>
+      </div>
+    </nav>
+    <div style="margin-top: 83px;" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-title">Contact Us</div>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="mb-3">
+              <label for="username" class="form-label">Your Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                placeholder="Full Name"
+                required
+              />
+              <div class="invalid-feedback">Your name is required.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label"
+                >Email <span class="text-muted">(Optional)</span></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="you@example.com"
+              />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="Enter your phone number"
+                required
+              />
+              <div class="invalid-feedback">Your phone number is required.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                id="message"
+                class="form-control"
+                rows="4"
+                placeholder="Type your message here"
+                required
+              ></textarea>
+              <div class="invalid-feedback">Your message is required.</div>
+            </div>
+            <div class="mb-3">
+              <label for="inputGroupFile04" class="form-label"
+                >Upload File</label
+              >
+              <input type="file" class="form-control" id="inputGroupFile04" />
+            </div>
+
+            <button class="btn btn-primary btn-lg w-100 mt-3" type="submit">
+              Send The Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <div>
+          <p>
+            <strong>Our Address:</strong><br />
+            123456 Assiut, ITI, Building OS Lab 404
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Contact:</strong><br />
+            Trainee@name.com<br />
+            01000000000
+          </p>
+        </div>
+        <div>
+          <p><strong>Follow us:</strong></p>
+          <a href="https://www.Facebook.com" target="_blank">Facebook</a> |
+          <a href="https://www.x.com" target="_blank">Twitter</a> |
+          <a href="https://Instagram.com" target="_blank">Instagram</a>
+        </div>
+      </div>
+  </body>
+</html>

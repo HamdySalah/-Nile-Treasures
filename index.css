@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap");
+
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+    color: #fff dd;
+    position: relative;
+    overflow: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+.card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+}
+#btn {
+    position: absolute;
+    top: 690px;
+    left: 16px;
+    z-index: 99;
+}
+.card-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff dd;
+    padding-left: 16px;
+}
+.content-place {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.content-place {
+    font-weight: 500;
+    color:#fff
+}
+.content-title-1, .content-title-2 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    color:#fff
+}
+.content-start {
+    width: 30px;
+    height: 5px;
+    border-radius: 99px;
+    background-color: #fff dd;
+}
+.details {
+    z-index: 22;
+    position: absolute;
+    top: 240px;
+    left: 60px;
+}
+.details .place-box {
+    height: 46px;
+    overflow: hidden;
+}
+.details .place-box .text {
+    padding-top: 16px;
+    font-size: 20px;
+    color:#fff
+}
+.details .place-box .text:before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 4px;
+    border-radius: 99px;
+    background-color: white;
+}
+.details .title-1, .details .title-2 {
+    font-weight: 600;
+    font-size: 72px;
+    font-family: "Oswald", sans-serif;
+    color:#fff
+}
+.details .title-box-1, .details .title-box-2 {
+    margin-top: 2px;
+    height: 100px;
+    overflow: hidden;
+    color: #fff;
+}
+.details > .desc {
+    margin-top: 16px;
+    width: 500px;
+    color: #fff;
+}
+.details > .cta {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures spacing between the buttons */
+}
+
+.details > .cta > .bookmark {
+    border: none;
+    background-color: #926d0e; /* Warm yellow color */
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; /* Rounded button */
+    color: white;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.details > .cta > .bookmark:hover {
+    background-color: #d28c18; /* Darker yellow on hover */
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+.details > .cta > .bookmark svg {
+    width: 20px;
+    height: 20px;
+}
+
+.details > .cta > .discover {
+    border: 1px solid #c2b0b0;
+    background-color: transparent;
+    height: 36px;
+    border-radius: 50px; /* Rounded edges */
+    color: #333; /* Darker text for contrast */
+    padding: 4px 24px;
+    font-size: 14px; /* Slightly larger text */
+    margin-right: 250px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.details > .cta > .discover > a {
+    text-decoration: none;
+    color: #333;
+}
+.details > .cta > .discover:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+.details > .cta > .discover:active {
+    transform: translateY(1px); /* Pressed effect on click */
+}
+
+nav {
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 36px;
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav > div:first-child {
+    gap: 10px;
+}
+
+nav .site_title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav .material-icons {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+nav .material-icons:hover {
+    color: #ecad29; /* Highlight color on hover */
+}
+
+nav > div:last-child > a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav > div:last-child > a:not(.svg-container):hover {
+    color: #ecad29; /* Highlight color on hover */
+}
+
+/* Active Link Style */
+nav > a:last-child > .active {
+    color: #ecad29;
+}
+nav > a:last-child > .active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ecad29;
+    border-radius: 99px;
+    animation: underline 0.3s ease;
+}
+@keyframes underline {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+/* Hover Effect for Non-Active Links */
+nav > div:last-child > div:not(.active):hover::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #ecad29;
+    border-radius: 99px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav > div:last-child > div:not(.active):hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Search and Person Icons */
+nav .svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+/* discover */
+
+nav .svg-container:hover {
+    background-color: rgba(236, 173, 41, 0.2); /* Highlight background on hover */
+}
+.indicator {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 5px;
+    z-index: 60;
+    background-color: #ecad29;
+}
+.pagination {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: inline-flex;
+}
+.pagination > .arrow {
+    z-index: 60;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    border: 2px solid #fff 55;
+    display: grid;
+    color:#fff;
+    place-items: center;
+}
+.pagination > .arrow:nth-child(2) {
+    margin-left: 20px;
+}
+.pagination > .arrow svg {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2;
+    color: #fff 99;
+}
+.pagination .progress-sub-container {
+    margin-left: 24px;
+    z-index: 60;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.pagination .progress-sub-container .progress-sub-background {
+    width: 500px;
+    height: 3px;
+    background-color: #fff 33;
+}
+.pagination .progress-sub-container .progress-sub-background .progress-sub-foreground {
+    height: 3px;
+    background-color: #ecad29;
+}
+.pagination .slide-numbers {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    z-index: 60;
+    position: relative;
+}
+.pagination .slide-numbers .item {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+.cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 100;
+}
+@media (max-width: 768px) {
+    .details {
+      top: 120px;
+      left: 20px;
+    }
+  
+    .details .title-1,
+    .details .title-2 {
+      font-size: 48px;
+    }
+  
+    .details .desc {
+      width: 90%;
+      font-size: 14px;
+    }
+  
+    .details .cta {
+      width: 90%;
+    }
+  
+    .card {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .pagination {
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .pagination .progress-sub-container {
+      width: 300px;
+    }
+  
+    nav {
+      padding: 10px 20px;
+    }
+  
+    nav .site_title {
+      font-size: 1.2rem;
+    }
+  
+    nav .material-icons {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .details {
+      top: 80px;
+      left: 10px;
+    }
+  
+    .details .title-1,
+    .details .title-2 {
+      font-size: 36px;
+    }
+  
+    .details .desc {
+      width: 100%;
+      font-size: 12px;
+    }
+  
+    .pagination .progress-sub-container {
+      width: 200px;
+    }
+  
+    nav {
+      padding: 5px 10px;
+    }
+  
+    nav .site_title {
+      font-size: 1rem;
+    }
+  
+    nav .material-icons {
+      font-size: 18px;
+    }
+  }
